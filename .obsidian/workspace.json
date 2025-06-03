@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "34052a67b3a1619f",
+    "type": "split",
+    "children": [
+      {
+        "id": "5c99c7a63c54ce55",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "50ae489658987dd6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "zotero/RAG Benchmark/asaiOpenScholarSynthesizingScientific2024 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "asaiOpenScholarSynthesizingScientific2024 1"
+            }
+          },
+          {
+            "id": "7d2d92daa0675855",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "zotero/RAG Benchmark/asaiOpenScholarSynthesizingScientific2024 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "asaiOpenScholarSynthesizingScientific2024 1"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0f85f25b4e8dc567",
+    "type": "split",
+    "children": [
+      {
+        "id": "870024b4036cf2af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f23036b0b755e3dc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "359b29ac4d74ba5b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4b21abf9aadb5bf3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "a4cee5b1d3d747a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "78e1fdf1ef50e707",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec65992ef6e25664",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "zotero_integration/exported_markdown/asaiOpenScholarSynthesizingScientific2024.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for asaiOpenScholarSynthesizingScientific2024"
+            }
+          },
+          {
+            "id": "4033d1e6b232e1db",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "zotero_integration/exported_markdown/asaiOpenScholarSynthesizingScientific2024.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from asaiOpenScholarSynthesizingScientific2024"
+            }
+          },
+          {
+            "id": "555109a7c0842b73",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "6ba6e96c7a11ea05",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "github-sync:Sync with Remote": false
+    }
+  },
+  "active": "7d2d92daa0675855",
+  "lastOpenFiles": [
+    "Untitled.md",
+    "zotero/RAG Benchmark/asaiOpenScholarSynthesizingScientific2024 1.md",
+    "zotero/RAG Benchmark/asaiOpenScholarSynthesizingScientific2024.md",
+    "zotero/RAG Benchmark/gaoEnablingLargeLanguage2023.md",
+    "zotero/RAG Benchmark/thakurBEIRHeterogeneousBenchmark2021.md",
+    "zotero/RAG Benchmark/loS2ORCSemanticScholar2020.md",
+    "zotero/RAG Benchmark/honovichTRUEReevaluatingFactual2022.md",
+    "zotero_integration/template.md",
+    "zotero/RAG Benchmark",
+    "Untitled",
+    "zotero",
+    "zotro",
+    "zotero_integration/exported_markdown/HttpsAclanthologyorg2022naaclmain287pdf.md",
+    "zotero_integration/exported_markdown/HttpsArxivorgPdf.md",
+    "zotero_integration/exported_markdown/123.md",
+    "zotero_integration/import_template.md",
+    "zotero/HttpsArxivorgPdf.md",
+    "zotero/asaiOpenScholarSynthesizingScientific2024.md",
+    "zotero",
+    "zotero_integration/image",
+    "zotero_integration/exported_markdown",
+    "create a link.md",
+    "zotero_integration",
+    "Welcome.md"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "database": "Zotero",
+  "noteImportFolder": "zotero",
+  "pdfExportImageDPI": 120,
+  "pdfExportImageFormat": "jpg",
+  "pdfExportImageQuality": 90,
+  "citeFormats": [],
+  "exportFormats": [
+    {
+      "name": "Create Lit Notes",
+      "outputPathTemplate": "zotero_integration/exported_markdown/{{citekey}}.md",
+      "imageOutputPathTemplate": "zotero_integration/image/{{citekey}}/",
+      "imageBaseNameTemplate": "image",
+      "templatePath": "zotero_integration/template.md",
+      "cslStyle": "apa"
+    }
+  ],
+  "citeSuggestTemplate": "[[{{citekey}}]]",
+  "openNoteAfterImport": false,
+  "whichNotesToOpenAfterImport": "first-imported-note"
+}
