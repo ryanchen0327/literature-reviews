@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 category: literaturenote
 tags: complex thought transformation, knowledge utilization, large language models (LLMs), reasoning graph, retrieval-augmented generation (RAG)
 citekey: xuCRPRAGRetrievalAugmentedGeneration2025
@@ -7,10 +8,9 @@ dateread:
 ---
 # Notes
 
+The paper proposed a tree-like reasoning (but different from CoT) structure to guide RAG reasoning. I think this already solved by the feedback-reflection process, which avoids broken logics.
 
-Need to guide reasoning plan for information retrieval to avoid relevant but not helpful for reasoning docs. I think this already solved by the reflection process, which makes reasoning dynamic based on new docs retrieved.
-
-This paper can be unhelpful
+This paper can be unhelpful.
 
 # Key questions
 

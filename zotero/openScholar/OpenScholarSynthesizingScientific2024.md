@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 category: literaturenote
 tags:
   - Retrieval
@@ -6,13 +7,32 @@ citekey: asaiOpenScholarSynthesizingScientific2024
 status: read
 dateread: 06/03/2025
 ---
-# Notes
+# 📝 Notes
 
-Three data sources: google search, semantic scholar api(keeps growing) and pes2o dataset. The later 2 are built on the same corpus in paper S2ORC.
+### 📚 Data Sources
+1. **Google Search** – General-purpose web search.
+2. **Semantic Scholar API** – Continuously updated; built on the **S2ORC** corpus.
+3. [**peS2o Dataset** ](obsidian://open?vault=litrev&file=zotero%2FRAG%20Benchmark%2FS2ORCSemanticScholar2020)– Also based on **S2ORC**; used for retrieval model training.
 
-The retrieval pes2o, reranking, feedback loops are supported by trained models. Others are algorithmic.
+> 🔁 **Note**: Both Semantic Scholar and peS2o are derived from the same underlying corpus: **S2ORC (Semantic Scholar Open Research Corpus)**.
 
-The bi-encoder trained on pes2o corpus should be better than general-purpose embeddings like weaviate.
+---
+
+### 🧠 System Overview
+
+- **Retrieval (peS2o)**, **Reranking**, and **Feedback Loops** are powered by **trained models**.
+- **Google Search** and other components are **algorithmic** (non-learning based).
+- A **[bi-encoder](obsidian://open?vault=litrev&file=zotero%2FRAG%20Benchmark%2FUnsupervisedDenseInformation2022a) trained on the peS2o corpus** is expected to outperform general-purpose embeddings (e.g., Weaviate).
+
+---
+
+# ❓ Questions
+
+### Why is the system using a **[cross-encoder trained on Chinese embeddings](obsidian://open?vault=litrev&file=zotero%2FopenScholar%2FCPackPackedResources2024)**?
+- Is **fine-tuning** this model producing **better results** than using:
+  - an **English-only** cross-encoder?
+  - or a **multilingual** cross-encoder?
+
 
 ---
 

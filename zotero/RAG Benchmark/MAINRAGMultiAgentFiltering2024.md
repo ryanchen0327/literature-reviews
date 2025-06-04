@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 category: literaturenote
 tags: Computer Science - Computation and Language, Computer Science - Information Retrieval
 citekey: changMAINRAGMultiAgentFiltering2024
@@ -7,12 +8,36 @@ dateread:
 ---
 # Notes
 
+# 📄 Document Ordering and Reranking Notes
 
-_Document ordering is helping LLM to produce more desirable results. May consider improve reranker on that.
+- **Document ordering** helps the LLM produce **more desirable results**.  
+  → 📌 Consider **improving the reranker** to better leverage this effect.
 
-Given a different distribution of relevance (a skewed one means only a few docs are highly related), the score threshold should be different to account for that. In openscholar we have top_n paper selected regardless of the distribution. 
+---
 
-I added filters on the first retrieved files and later reflection-retrieved files. Also added more data sources for reflection-retrieval (It finds a lot more docs so the more sources the stricter the threshold). [https://github.com/ryanchen0327/OpenScholarForSciFy](https://github.com/ryanchen0327/OpenScholarForSciFy)_
+### 📊 Relevance Distribution Insight
+
+- In cases of a **skewed relevance distribution** (i.e., only a few documents are truly relevant), the **score threshold** for document selection should be **adjusted accordingly**.
+- However, in **OpenScholar**, the current setup selects a fixed `top_n` number of papers, **regardless of distribution skew**.
+
+---
+
+### 🧪 Retrieval Improvements
+
+- Added **filters** for:
+  - The **initially retrieved** documents
+  - The **reflection-retrieved** documents
+
+- Added **more data sources** for **reflection retrieval**:
+  - 🧠 This leads to **significantly more documents** being retrieved
+  - ✅ Thus, a **stricter threshold** is now applied to maintain precision
+
+---
+
+### 🔗 Codebase
+
+GitHub Repository:  
+👉 [OpenScholarForSciFy](https://github.com/ryanchen0327/OpenScholarForSciFy)
 
 
 # Key questions

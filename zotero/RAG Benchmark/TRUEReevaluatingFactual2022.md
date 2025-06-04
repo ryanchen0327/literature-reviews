@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 category: literaturenote
 tags: Computer Science - Computation and Language
 citekey: honovichTRUEReevaluatingFactual2022

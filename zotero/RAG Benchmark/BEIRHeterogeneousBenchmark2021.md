@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 category: literaturenote
 tags: 
 citekey: thakurBEIRHeterogeneousBenchmark2021

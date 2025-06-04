@@ -1,31 +1,81 @@
 ---
+dg-publish: true
 category: literaturenote
-tags: Computer Science - Computation and Language, Computer Science - Artificial Intelligence, Computer Science - Information Retrieval
+tags:
+  - Computer
+  - Science
+  - "-"
+  - Computation
+  - and
+  - Language
+  - Computer
+  - Science
+  - "-"
+  - Artificial
+  - Intelligence
+  - Computer
+  - Science
+  - "-"
+  - Information
+  - Retrieval
 citekey: izacardUnsupervisedDenseInformation2022a
-status: unread
+status: read
 dateread:
 ---
 # Notes
 
-Cross encoder/bi encoder
+## Cross-Encoder vs Bi-Encoder: Unsupervised Contrastive Learning
 
-Unsupervised training for contrastive learning:
-Training set generation: 
-	Positive pairs:
-		Inverse Cloze Task: aba -> q: a...a, k: b
-		Independent cropping: Symmetric: both q and k are same length, overlaps: encourages exact matching, Shorter queries may make the task **more difficult**, forcing the model to learn better representations.
-	Negative pairs:
-		In batch: it requires extremely large batch sizes to work well
-		across batch: last batch contains outdated representation since current batch runs on an updated θ. Fix by slowing down key encoder by θk ← mθk + (1 − m)θq. (MoCo)
-Unsupervised training:
-	s(q, d) = 〈fθ(q), fθ(d)〉.
-	L(q, k+) = − exp(s(q, k+)/τ )   /    ( exp(s(q, k+)/τ ) + ∑K  i=1 exp(s(q, ki)/τ) ) ,
-Ablation: 
-	MOCO and in-batch negatives have similar results. So, MoCo is better with less memory use for more negative pairs.
-	More negative samples leads to better results.
-	random cropping strategy outperforms the inverse cloze task in this setting
-		
+### 🔧 Unsupervised Training Setup
 
+#### 🟢 Positive Pair Generation
+- **Inverse Cloze Task**:  
+  Format: `aba`  
+  - Query `q`: `a...a`  
+  - Key `k+`: `b`
+
+- **Independent Cropping (Symmetric Strategy)**:  
+  - Both `q` and `k+` are of the same length  
+  - Overlapping spans encourage exact matching  
+  - **Shorter queries** make the task *more difficult*, encouraging the model to learn better representations
+
+#### 🔴 Negative Pair Generation
+- **In-Batch Negatives**:  
+  - Requires **extremely large batch sizes** to be effective
+
+- **Cross-Batch Negatives (Momentum Encoder)**:
+  - Problem: Last batch contains outdated representations  
+  - Solution (MoCo): Use a momentum update for key encoder:  
+    \[
+    \theta_k \leftarrow m \cdot \theta_k + (1 - m) \cdot \theta_q
+    \]
+
+---
+
+### 🧪 Contrastive Loss
+Score function:
+\[
+s(q, d) = \langle f_{\theta}(q), f_{\theta}(d) \rangle
+\]
+
+Contrastive loss:
+\[
+\mathcal{L}(q, k^+) = - \frac{\exp(s(q, k^+)/\tau)}{\exp(s(q, k^+)/\tau) + \sum_{i=1}^K \exp(s(q, k_i^-)/\tau)}
+\]
+
+---
+
+### 🔍 Ablation Study
+
+- **MoCo vs. In-Batch Negatives**:  
+  → Perform similarly  
+  → MoCo is **more memory efficient** with a **larger pool of negatives**
+
+- **Number of Negatives**:  
+  → More negatives → **Better performance**
+
+- **Positive Pair Strategy**:  
+  → **Random cropping** outperforms **Inverse Cloze Task**
 
 # Key questions
 
