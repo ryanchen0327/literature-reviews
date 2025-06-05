@@ -8,13 +8,72 @@ dateread:
 ---
 # Notes
 
+# 📊 Survey on Factual Consistency Evaluation
 
-Comment: Accepted as a long paper to NAACL 2022 main conference
+### 📚 Overview
+- **Databases reviewed**: 11 factual consistency datasets
+- **Metrics surveyed**: 10 evaluation methods
 
+---
+
+## 🧮 Evaluation Metrics
+
+### 🔹 N-gram Based (Weak Correlation with Factual Consistency)
+- BLEU
+- ROUGE
+- Token F1
+
+### 🔹 Model-Based
+- **BERTScore**
+- **BLEURT**
+- **FactCC**
+- **BARTScore**
+- **CTC**
+
+### 🔹 NLI-Based
+- **ANLI** (T5-11B fine-tuned on ANLI)
+- **SUMMAC**
+
+### 🔹 QG-QA Based
+- **Q²**
+- **QuestEval**
+
+---
+
+### 🔍 Key Observations
+
+- **NLI-based methods** (ANLI, SCZS17, Q²) **outperform** other categories.
+- All methods show **performance degradation** on **longer contexts**.
+- **Metric combinations** yield **better results** than using individual metrics.
+- **Larger models** lead to improved **ROC AUC**.
+
+---
+
+## 🧪 Evaluation of Metric Failures
+
+### A. ❗️“Hard” Examples: All Metrics Failed
+- Reviewed **80 examples** with **complete metric-human disagreement**
+- Found **35/80 (44%)** had **annotation errors** (human label likely incorrect)
+
+### B. ⚠️ Moderately Hard Examples: 1–2 Metrics Failed
+- Reviewed **100 examples**
+- Found **27/100 (27%)** annotation errors
+
+### C. ✅ Random Baseline
+- Randomly sampled **100 examples**
+- Found only **10/100 (10%)** annotation errors
+
+---
+
+### 🧠 Insight
+> **Automatic metrics can outperform human annotators** in reliability for ambiguous or complex cases.
+
+📌 Use **high-confidence metric disagreements** as a signal to **clean or audit human labels**.
 
 # Key questions
 
-
+How to address degradation on long input. 
+Do we need a more consistent annotation scheme for metric comparison?
 
 ---
 > [!Cite]
