@@ -9,7 +9,8 @@ dateread:
 
 
 it uses three tools and gives llm the freedom to use them. 
-1.
+1. search from google scholar, pubmed, arxiv, and any open source websites. This allows multiple search to be performed at llm's decision with different keywords.
+2. gather_
 
 
 # Key questions
