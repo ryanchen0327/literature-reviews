@@ -81,6 +81,7 @@ Contrastive loss:
 
 
 
+
 ---
 > [!Cite]
 > Izacard, G., Caron, M., Hosseini, L., Riedel, S., Bojanowski, P., Joulin, A., & Grave, E. (2022). _Unsupervised Dense Information Retrieval with Contrastive Learning_ (No. arXiv:2112.09118). arXiv. [https://doi.org/10.48550/arXiv.2112.09118](https://doi.org/10.48550/arXiv.2112.09118)

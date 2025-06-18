@@ -27,7 +27,7 @@ Comment: Accepted by EMNLP 2023. Code and data are available at https://github.c
 
 > [!Metadata]
 > **Authors**::Gao, Tianyu, Yen, Howard, Yu, Jiatong, Chen, Danqi
-> **Title**:: Enabling Large Language Models to Generate Text with Citations  
+> 	**Title**:: Enabling Large Language Models to Generate Text with Citations  
 > **Year**:: 2023  
 > **Citekey**:: gaoEnablingLargeLanguage2023> **Item Type**:: preprint> **DOI**:: 10.48550/arXiv.2305.14627
 
