@@ -11,6 +11,7 @@ dateread:
 it uses three tools and gives llm the freedom to use them. 
 1. search from google scholar, pubmed, arxiv, and any open source websites. This allows multiple search to be performed at llm's decision with different keywords. The documents are stored in vector database with text-embedding-ada-002 with 4000 token chunk.
 2. gather_evidence is a search with llm agent generated queries that it thinks can helps answering the question. It performs a vector database search with the query and 1.search gathered documents. Then ask a summary_llm to summarize each returned document and rate it. Finally it takes the top-1 chunk to context library. 
+3. answer_question: First use ask_llm prompt to gather information helpful in th 
 
 
 # Key questions
