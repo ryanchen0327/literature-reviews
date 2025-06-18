@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 category: literaturenote
 tags: Computer Science - Computation and Language, Computer Science - Artificial Intelligence, Computer Science - Information Retrieval, Physics - Physics and Society
 citekey: skarlinskiLanguageAgentsAchieve2024
@@ -54,11 +55,7 @@ All tools are driven by an LLM agent initialized with the following instruction:
 Zero training, always keep up with new papers published, evolve with better llm, chain of thought used inexplicitly in gather-evidence step, decomposed rag_systems as functions
 
 # limitations
-didn't mention figures in paper and can be improved with embeddings with vllm.
-
-# Key questions
-
-Cannot verify paper's faithfulness.
+didn't mention figures in paper and can be improved with better embeddings and vllm, Cannot verify paper's faithfulness.
 
 
 ---
