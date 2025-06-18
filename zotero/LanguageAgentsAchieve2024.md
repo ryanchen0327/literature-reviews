@@ -50,7 +50,10 @@ All tools are driven by an LLM agent initialized with the following instruction:
 
 > **"Answer question: <question>. Search for papers, gather evidence, and answer. If you do not have enough evidence, you can search for more papers (preferred) or gather more evidence with a different phrase. You may rephrase or break-up the question in those steps. Once you have five or more pieces of evidence from multiple sources, or you have tried many times, call answer_question tool. You may reject the answer and try again if it is incomplete."**
 
-# key improve
+# key improvements
+Zero training, always keep up with new papers published, evolve with better llm, chain of thought, 
+
+# limitations
 
 
 # Key questions
