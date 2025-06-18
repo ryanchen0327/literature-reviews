@@ -51,10 +51,10 @@ All tools are driven by an LLM agent initialized with the following instruction:
 > **"Answer question: <question>. Search for papers, gather evidence, and answer. If you do not have enough evidence, you can search for more papers (preferred) or gather more evidence with a different phrase. You may rephrase or break-up the question in those steps. Once you have five or more pieces of evidence from multiple sources, or you have tried many times, call answer_question tool. You may reject the answer and try again if it is incomplete."**
 
 # key improvements
-Zero training, always keep up with new papers published, evolve with better llm, chain of thought, decomposed rag_systems as fucntions
+Zero training, always keep up with new papers published, evolve with better llm, chain of thought used inexplicitly in gather-evidence step, decomposed rag_systems as functions
 
 # limitations
-didn't mention figures in paper, can be improved with embeddings with vllm.
+didn't mention figures in paper and can be improved with embeddings with vllm.
 
 # Key questions
 
