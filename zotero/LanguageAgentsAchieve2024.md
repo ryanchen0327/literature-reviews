@@ -9,8 +9,8 @@ dateread:
 
 
 it uses three tools and gives llm the freedom to use them. 
-1. search from google scholar, pubmed, arxiv, and any open source websites. This allows multiple search to be performed at llm's decision with different keywords.
-2. gather_
+1. search from google scholar, pubmed, arxiv, and any open source websites. This allows multiple search to be performed at llm's decision with different keywords. The documents are stored in vector database with text-embedding-ada-002.
+2. gather_evidence is a search with 
 
 
 # Key questions
