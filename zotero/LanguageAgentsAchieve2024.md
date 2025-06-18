@@ -11,7 +11,15 @@ dateread:
 it uses three tools and gives llm the freedom to use them. (keywords: summary_llm, ask_llm, answer_llm, context library, different prompts)
 1. search from google scholar, pubmed, arxiv, and any open source websites. This allows multiple search to be performed at llm's decision with different keywords. The documents are stored in vector database with text-embedding-ada-002 with 4000 token chunk.
 2. gather_evidence is a search with llm agent generated queries that it thinks can helps answering the question. It performs a vector database search with the query and 1.search gathered documents. Then use summary_llm prompts to summarize each returned document and rate it. Finally it takes the top-1 chunk to context library. 
-3. answer_question: First use ask_llm prompt to gather information helpful in the pre-trained llm and store into context library. Then use answer_lllm prompt to a
+3. answer_question: First use ask_llm prompt to gather information helpful in the pre-trained llm and store into context library. Then use answer_lllm prompt to ask llm to generate answer based on context library and human query.
+
+All above are initlialized with an agent llm with following prompt: 
+Answer question: question. Search for papers, gather evidence, and answer. If you do not
+have enough evidence, you can search for more papers (preferred) or gather more evidence
+with a different phrase. You may rephrase or break-up the question in those steps. Once
+you have five or more pieces of evidence from multiple sources, or you have tried many
+times, call answer_question tool. You may reject the answer and try again if it is
+incomplete.
 
 
 # Key questions
