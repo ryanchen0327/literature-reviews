@@ -8,7 +8,8 @@ dateread:
 # Notes
 
 
-it uses three tools and gives llm the freedom 
+it uses three tools and gives llm the freedom to use them. 
+1.
 
 
 # Key questions
