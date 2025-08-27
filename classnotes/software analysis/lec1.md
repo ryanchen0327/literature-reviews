@@ -10,3 +10,8 @@ Soundness: FPR = 0, Precision = 1
 Completeness: FNR = 0, Recall = 1
 
 
+Who needs software analysis: 
+Compiler, Software quality tools, IDEs
+
+
+
