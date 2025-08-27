@@ -14,18 +14,19 @@ Who needs software analysis:
 Compiler, Software quality tools, IDEs
 
 
-Dynamic Analysis:
+Dynamic Analysis: runtime
 	array bounding checking: Purify; 
 	memory leak detection: Valgrind; 
 	datarace detection: Eraser;
 	finding likely invariants: Daikon;
 It can never conclude an invariance, but can infer a value can be an invariant and conclude any other values cannot be invariant.
 
-Static Analysis:
+Static Analysis: compile time
 	Suspicious error patterns: Lint, FindBugs, Coverity;
 	Checking API usage rules: Microsoft SLAM;
 	Memory leak detection: Facebook infer;
 	Verifying invariant: ESC/Java
+It can conclude invariant value before runtime.
 
 
 
