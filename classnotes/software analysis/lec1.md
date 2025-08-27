@@ -21,7 +21,7 @@ datarace detection: Eraser;
 finding likely invariants: Daikon;
 
 Static Analysis:
-
+Suspicious error patterns: 
 
 
 
