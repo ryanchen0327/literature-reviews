@@ -15,7 +15,12 @@ Compiler, Software quality tools, IDEs
 
 
 Dynamic Analysis:
-array bounding checking: Purify
+array bounding checking: Purify; 
+memory leak detection: Valgrind; 
+datarace detection: Eraser;
+finding likely invariants: Daikon;
+
+Static Analysis:
 
 
 
