@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 
 Precision, Recall, FPR, FNR:
 Precision = TP / (TP + FP), FPR = FP / (TP + FP), FPR + Precision = 1
