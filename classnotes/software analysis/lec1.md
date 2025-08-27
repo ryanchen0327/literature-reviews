@@ -19,7 +19,7 @@ Dynamic Analysis:
 	memory leak detection: Valgrind; 
 	datarace detection: Eraser;
 	finding likely invariants: Daikon;
-It can never conclude an invariance, but can conclude 
+It can never conclude an invariance, but can infer a value can be an invariant and conclude any other values cannot be invariant.
 
 Static Analysis:
 	Suspicious error patterns: Lint, FindBugs, Coverity;
