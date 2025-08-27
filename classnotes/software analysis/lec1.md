@@ -14,4 +14,9 @@ Who needs software analysis:
 Compiler, Software quality tools, IDEs
 
 
+Dynamic Analysis:
+array bounding checking: Purify
+
+
+
 
