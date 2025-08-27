@@ -5,4 +5,5 @@ Now let’s look at effectiveness. As we saw in the divide-by-zero examples, a d
 
 Precision, Recall, FPR, FNR:
 Precision = TP / (TP + FP), FPR = FP / (TP + FP), FPR + Precision = 1
-Recall = TP / (TP + FN)
+Recall = TP / (TP + FN), FNR = FN / (TP + FN), FNR + Recall = 1
+F-s
