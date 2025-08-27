@@ -21,7 +21,9 @@ datarace detection: Eraser;
 finding likely invariants: Daikon;
 
 Static Analysis:
-Suspicious error patterns: 
+Suspicious error patterns: Lint, FindBugs, Coverity;
+Checking API usage rules: Microsoft SLAM;
+Memory leak detection: 
 
 
 
