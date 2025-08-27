@@ -15,16 +15,17 @@ Compiler, Software quality tools, IDEs
 
 
 Dynamic Analysis:
-array bounding checking: Purify; 
-memory leak detection: Valgrind; 
-datarace detection: Eraser;
-finding likely invariants: Daikon;
+	array bounding checking: Purify; 
+	memory leak detection: Valgrind; 
+	datarace detection: Eraser;
+	finding likely invariants: Daikon;
+It can never conclude an invariance, but can conclude 
 
 Static Analysis:
-Suspicious error patterns: Lint, FindBugs, Coverity;
-Checking API usage rules: Microsoft SLAM;
-Memory leak detection: Facebook infer;
-Verifying invariant: ESC/Java
+	Suspicious error patterns: Lint, FindBugs, Coverity;
+	Checking API usage rules: Microsoft SLAM;
+	Memory leak detection: Facebook infer;
+	Verifying invariant: ESC/Java
 
 
 
