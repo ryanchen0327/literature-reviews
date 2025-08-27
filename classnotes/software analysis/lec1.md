@@ -29,6 +29,13 @@ Static Analysis: compile time
 It can conclude invariant value before runtime.
 
 
+An iterative approach to design Static Analysis with:
+Program Representation, 
+Abstract Domain, 
+Transfer Functions, 
+Fixed-Point Computation Algorithm,
+
+
 
 
 
