@@ -224,6 +224,4 @@ C^T_L \leq \frac{\ln k}{\eta} + (1 + \eta) C_i^T \quad \Rightarrow \quad \text{R
 \]
 
 \end{document}
-
-
 ```
