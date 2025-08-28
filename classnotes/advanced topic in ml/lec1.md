@@ -1,7 +1,6 @@
 ---
 dg-publish: true
 ---
-
 ```latex
 \documentclass[4pt]{extarticle}
 \usepackage[margin=1in]{geometry}
@@ -174,7 +173,20 @@ Since the maximum cost of each action is $1$, the cumulative cost of any action 
 \[
 \max_{i \in A} \text{Reg}(\Pi^T, i) \leq 2\sqrt{T \ln k}.
 \]
-This grows sublinearly with $T$, so the average per-round cost approaches that of the best fixed action at rate $O\left(\sqrt{\frac{\ln k}{T}}\right)$. To ensure $\eta \leq \tfrac{1}{2}$, we can set $T = 4\ln(k)$, in which case the regret satisfies $\max_{i \in A} \text{Reg}(\Pi^T, i) \leq 4\ln(k)$, matching the fixed-action Halving bound up to a constant factor.
+To ensure $\eta \leq \tfrac{1}{2}$, we must set $T \geq 4\ln(k)$, in which the $T = 4\ln(k)$ case the regret satisfies $\max_{i \in A} \text{Reg}(\Pi^T, i) \leq 4\ln(k)$, matching the fixed-action Halving bound up to a constant factor.
+
+\noindent This also grows sub-linearly with $T$, so the average per-round cost approaches that of the best fixed action at rate $O\left(\sqrt{\frac{\ln k}{T}}\right)$. We can get the approximate number of rounds for average per-round cost to approach best action cost by $\epsilon = 0.05$ assuming $k = 100$:
+\[
+\frac{\max_{i \in A} \text{Reg}(\Pi^T, i)}{T} \leq \frac{2\sqrt{T \ln k}}{T}
+\]
+\[
+\frac{2\sqrt{T \ln k}}{T} \leq \epsilon
+\]
+\[
+T \geq \frac{4\ln(k)}{\epsilon^2} \approx 7368
+\]
+But do we need $\epsilon = 0.05$ in this kind of game?
+
 
 \subsection{Proof}
 
@@ -212,5 +224,6 @@ C^T_L \leq \frac{\ln k}{\eta} + (1 + \eta) C_i^T \quad \Rightarrow \quad \text{R
 \]
 
 \end{document}
+
 
 ```
